@@ -285,7 +285,7 @@ function asset_admin($key, $insert) {
                 echo "</table>";
                 echo "</td></tr></table>";
                 echo "<hr size=0 color='" . $hrcolor . "'>";
-                echo "<font color='#ff0033' face='arial' size='4'><b> *</b></font> <font class='text10bold'>deexp_date a required field</font>";
+                echo "<font color='#ff0033' face='arial' size='4'><b> *</b></font> <font class='text10bold'>denotes a required field</font>";
                 echo "<p><center>";
                 echo "<a href='javascript:history.back()'><img src='images/back.jpg' width=88 height=27 border=0></a>";
                 if ($insert == true) echo "<input type='image' name='submit' src='images/add.jpg' border=0 width=88 height=27></center></form>";

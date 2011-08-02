@@ -155,7 +155,7 @@ function asset_format($query_data, $query_data2, $color, $class, $is_report) {
 	echo "<font class='text10bold'>" . $query_data["AssetType"] . "</font>\n";
 	
 	//Asset OS
-	if ((strlen($query_data["os"]) > 0) && (strcmp($action,"assetos") != 0)) echo " (" . $query_data["os"] . ")\n";
+	if ((strlen($query_data["name"]) > 0) && (strcmp($action,"assetos") != 0)) echo " (" . $query_data["name"] . ")\n";
 	echo "<font class='text11bold'><br></font>";
 
 	// Supplier and Model

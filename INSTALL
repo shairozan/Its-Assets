@@ -1,0 +1,31 @@
+Its Assets INSTALLATION INSTRUCTIONS
+
+
+===========
+NEW INSTALL
+===========
+
+- Upload the Its Assets files to a folder on a web server supporting PHP 4.
+
+- For importing, change the file_uploads line in the /etc/php.ini file to file_uploads = On  (This file is in the php directory in Windows).  Restart Apache.
+		
+- Ensure you have a MySQL server running on your server or network. If MySQL is hosted remotely, modify these settings at the top of the config.php file:
+	- $ip = “localhost”;  // use the IP of the machine hosting MySQL
+	- $sql_login = “root”;  // enter the MySQL login name to used
+	- $sql_pass = “”; // enter the MySQL password to be used
+
+	- If desired, modify the auto generated database name by replacing the $sql_db line to
+		- $sql_db = “dbname”; // where dbname is the name of the database to use
+		
+	- The organization name can be entered by modifying $org_name line.
+		
+- Open your web browser and go to the URL where Its Assets is installed.  Click “Install”.
+
+The MySQL database is autocreated if a MySQL server is found and the software can be used right away.
+
+===========
+UPGRADING
+===========
+
+ - Replace all your .php files EXCEPT config.php with the files in this package.
+ - IMPORTANT: Either run upgrade.php or execute the SQL lines in upgrade.sql

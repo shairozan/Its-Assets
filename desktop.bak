@@ -1,0 +1,54 @@
+<?php                                  
+  $con = mysql_connect("localhost","root","louro123");
+  if (!$con) {                                        
+    die('Could not connect: ' . mysql_error());       
+  }                                                   
+
+  mysql_select_db("simpleassets", $con);
+  $result = mysql_query("select  Assets.os AS Name
+,       Assets.Id AS Assets_ID                    
+,       Assets.AssetTag                           
+,       Assets.AssetSupplier                      
+,       Assets.AssetModel                         
+,       Assets.AssetType                          
+,       Assets.AssetSerial                        
+,       Assets.AssetPrice                         
+,       date(Assets.Notes) AS Expiration_Date     
+,       max(Assignments.StartDate) AS Assignment_Date
+FROM Assets                                          
+INNER JOIN Assignments ON Assignments.AssetId = Assets.Id
+INNER JOIN Employees ON Employees.Id = Assignments.EmployeeId
+where   Assignments.EmployeeId <> -2                                    
+and     Assets.AssetType = 'Desktop'                          
+and     date(Assets.Notes) <= curdate()
+-- Final Test 2 shows up no matter what, so we're removing it from the scope --
+and	Assets.os <> 'GW-FINALTEST2'                      
+group by Assets.os, Assets.Id, Assets.AssetTag, Assets.AssetSupplier, Assets.AssetModel, Assets.AssetType, Assets.AssetSerial, Assets.AssetPrice, Assets.Notes
+ORDER BY Assets.os");                                                                                                                                         
+  echo "<table border='1'>                                                                                                                                    
+    <tr>
+      <th>Asset Tag</th>
+      <th>Machine Name</th>
+      <th>Manufacturer</th>
+      <th>Model</th>
+      <th>Type</th>
+      <th>Serial</th>
+      <th>Expiration Date</th>
+    </tr>";
+    while ($row = mysql_fetch_array($result)) {
+      echo "<tr>";
+      echo "<td>" . $row['AssetTag'] . "</td>";
+      echo "<td>" . $row['Name'] . "</td>";
+      echo "<td>" . $row['AssetSupplier'] . "</td>";
+      echo "<td>" . $row['AssetModel'] . "</td>";
+      echo "<td>" . $row['AssetType'] . "</td>";
+      echo "<td>" . $row['AssetSerial'] . "</td>";
+      echo "<td>" . $row['Expiration_Date'] . "</td>";
+
+      echo "</tr>";
+
+    }
+  echo "</table>";
+
+  mysql_close($con);
+?>

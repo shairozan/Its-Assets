@@ -1,0 +1,6 @@
+===========
+UPGRADING
+===========
+
+ - Replace all your .php files EXCEPT config.php with the files in this package.
+ - IMPORTANT: Either run upgrade.php or execute the SQL lines in upgrade.sql

@@ -1,0 +1,35 @@
+	a { font-family: Arial, Helvetica, sans-serif; font-size: 15px; text-decoration: none;}
+	a:hover { text-decoration: underline;}
+	.tinymenutext { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffcc; }
+	.tinymenutextblock { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; background-color: #ffffcc; color: #000000; }
+	.menutext { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; color: #ffcc00; padding-bottom: 7px; padding-top: 7px; padding-left: 3px; padding-right: 3px; }
+	.menutextblock { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; background-color: #ffcc00; color: #000000; padding-bottom: 7px; padding-top: 7px; padding-left: 3px; padding-right: 3px; }
+	.text9 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;}
+	.text9bold { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold;}
+	.text10 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px;}
+	.text10bold { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;}
+	.text11 { font-family: Arial, Helvetica, sans-serif; font-size: 15px;}
+	.text11bold { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; }
+	.text11special { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; padding-bottom: 1px; padding-left: 8px; padding-right: 8px; padding-top: 4px; }
+	.text11specialactive { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; background-color: #ffdddd; padding-bottom: 1px; padding-left: 8px; padding-right: 8px; padding-top: 2px; }
+	.text11special2 { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; padding-bottom: 1px; padding-left: 8px; padding-right: 8px; padding-top: 4px; }
+	.text11special2active { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; background-color: #ffeecc; padding-bottom: 1px; padding-left: 8px; padding-right: 8px; padding-top: 2px; }
+	.text12 { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: none;}
+	.text12bold { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;}
+	.text13 { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: none;}
+	.text13bold { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold;}
+	.text18 { font-family: Arial, Helvetica, sans-serif; font-size: 23px;}
+	.text18bold { font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: bold;}
+	.calendar_permok { border : 1px solid #999999; background : #99ccff}
+	.calendar_tempok { border : 1px solid #999999; background : #ffffcc}
+	.calendar_passed { border : 1px solid #999999; background : #bbbbbb}
+	.calendar_invalid { border : 1px solid #999999; background : #dddddd}
+	.calendar_taken { border : 1px solid #999999; background : #ff6666}
+	.approvals { border : 1px solid #999999; background : #ffffff}
+	.approvals_dark { border : 1px solid #999999; background : #ffeecc}	
+	.boxtext13 { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: none; border-bottom: 1px solid #000000; border-right: 1px solid #000000; border-left: 1px solid #000000; border-top:1px solid #000000;}
+	.boxtext13bold { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold; border-bottom: 1px solid #000000; border-right: 1px solid #000000; border-left: 1px solid #000000; border-top:1px solid #000000;}
+	.assetborder { border : 1px solid #ffeecc; }
+	.employeeborder { border : 1px solid #ffdddd; }
+	.licenseborder { border : 1px solid #cc99cc; }
+	.reportsborder { border : 1px solid #99cc66; }
